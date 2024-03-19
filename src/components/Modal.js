@@ -19,14 +19,14 @@ const Modal = ({ instrument, closeModal }) => {
                     <img src={`images/${instrument.name.toLowerCase()}.png`} alt={instrument.name} className="instrument-image"/>
                     <div className="instrument-details">
                         <h2>{instrument.name}</h2>
-                        <p>Type: {instrument.type}</p>
-                        <p>Price Range: {instrument.price_range}</p>
-                        <p>Average Rent Cost: {instrument.avg_rent_cost}</p>
-                        <p>Weight: {instrument.weight}</p>
-                        <p>Size: {instrument.size}</p>
-                        <p>Hands: {instrument.hands}</p>
-                        <p>Groups: {instrument.groups.join(', ')}</p>
-                        <p>Genres: {instrument.genres.join(', ')}</p>
+                        <p><strong>Instrument Class</strong>: {instrument.type}</p>
+                        <p><strong>Price Range</strong>: {instrument.price_range}</p>
+                        <p><strong>Average Rent Cost</strong>: {instrument.avg_rent_cost}</p>
+                        <p><strong>Weight</strong>: {instrument.weight}</p>
+                        <p><strong>Size</strong>: {instrument.size}</p>
+                        <p><strong>Minimum Hands Required</strong>: {instrument.hands}</p>
+                        <p><strong>Groups</strong>: {instrument.groups.join(', ')}</p>
+                        <p><strong>Genres</strong>: {instrument.genres.join(', ')}</p>
                     </div>
                 </div>
             </div>

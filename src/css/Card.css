@@ -4,6 +4,7 @@
 }
 
 .card {
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,13 +18,14 @@
 
 .card:hover {
     border-color: #3F79AB; /* Change border color on hover */
-    transform: scale(1.08); /* Zoom effect on hover */
+    transform: scale(1.05); /* Zoom effect on hover */
 }
 
 .card img {
-    width: 100%;
+    width: auto;
     height: auto;
-    max-height: 200px; /* Set maximum height for the images */
+    max-width: 200px;
+    max-height: 150px; /* Set maximum height for the images */
     object-fit: cover; /* Ensure the entire image fits */
 }
 

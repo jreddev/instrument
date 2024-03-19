@@ -3,6 +3,7 @@
 /* Header styles */
 .header {
     background-color: #333; /* Default background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Add box shadow */
 }
 
 /* Logo styles */

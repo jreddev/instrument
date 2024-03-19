@@ -1,0 +1,5 @@
+.footer {
+    top: auto; /* Position at the bottom */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}

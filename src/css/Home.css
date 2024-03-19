@@ -1,57 +1,77 @@
-/* home.css */
-
 .home {
-    max-width: 1200px; /* Adjust max-width as needed */
+    display: flex;
     margin: 0 auto;
-    padding: 20px;
+    background-color: #fafafa;
+    min-height: 84vh;
 }
 
 .card-container {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-    min-width: 300px; /* Set a minimum width for the card container */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust minmax values for card width */
+    gap: 30px;
+    max-width: 90%;
+    justify-content: center; /* Center the grid horizontally */
+    flex-grow: 1; /* Allow the card container to grow and fill available space */
 }
 
 .card {
-    min-width: 200px; /* Set a minimum width for each card */
+    width: 200px; /* Set a fixed width for the cards */
+    max-width: 90%;
 }
 
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-    .card-container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-    .card {
-        min-width: 150px; /* Adjust minimum width for smaller screens */
-    }
+.drawer {
+    width: 200px;
+    background-color: #fafafa;
 }
 
-@media screen and (max-width: 480px) {
-    .card-container {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
-    .card {
-        min-width: 120px; /* Adjust minimum width for even smaller screens */
-    }
+.content {
+    flex: 1;
+    margin-left: 20px; /* Adjust margin to accommodate the drawer */
 }
 
-.filter-buttons {
+.filter-container {
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    flex-direction: column; /* Display the filters in a single column */
 }
 
-.filter-buttons button {
-    flex-grow: 1;
+.filter-container h4 {
+    color: #5d5d5d;
+}
+
+.filter {
     padding: 10px;
-    border: none;
-    background-color: transparent;
-    color: #333;
-    cursor: pointer;
-    transition: color 0.3s;
+    width: auto;
 }
 
-.filter-buttons button.active {
-    border-bottom: 2px solid #FFAA00; /* Underline for selected button */
+.clear-filter-btn {
+    margin-top: 10px;
+    background-color: #fcfcfc;
+    padding: 5px;
+    border-color: #f0f0f0;
+    border-radius: 8px;
 }
+
+.clear-filter-btn:hover {
+    transform: scale(1.05);
+}
+
+.dropdown-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow-icon {
+    margin-left: 10px; /* Adjust the margin as needed */
+    transition: transform 1s ease;
+}
+
+
