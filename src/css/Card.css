@@ -1,0 +1,36 @@
+.card-wrapper {
+    width: 200px; /* Adjust width as needed */
+    margin: 10px; /* Adjust margin as needed */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    height: 100%; /* Ensure all cards occupy the same height */
+    transition: border-color 0.3s, transform 0.3s; /* Add transition for smooth effect */
+}
+
+.card:hover {
+    border-color: #3F79AB; /* Change border color on hover */
+    transform: scale(1.08); /* Zoom effect on hover */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Set maximum height for the images */
+    object-fit: cover; /* Ensure the entire image fits */
+}
+
+.card p {
+    margin-top: auto; /* Push the text to the bottom of the card */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Add additional styles as needed */

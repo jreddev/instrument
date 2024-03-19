@@ -1,0 +1,57 @@
+/* home.css */
+
+.home {
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    min-width: 300px; /* Set a minimum width for the card container */
+}
+
+.card {
+    min-width: 200px; /* Set a minimum width for each card */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .card {
+        min-width: 150px; /* Adjust minimum width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    .card {
+        min-width: 120px; /* Adjust minimum width for even smaller screens */
+    }
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.filter-buttons button.active {
+    border-bottom: 2px solid #FFAA00; /* Underline for selected button */
+}

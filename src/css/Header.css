@@ -1,0 +1,26 @@
+/* components/Header.css */
+
+/* Header styles */
+.header {
+    background-color: #333; /* Default background color */
+}
+
+/* Logo styles */
+.logo-img {
+    height: 50px; /* Adjust the height as needed */
+    margin-right: 16px; /* Adjust margin as needed */
+}
+
+/* Title styles */
+.title-link {
+    flex-grow: 1;
+    text-decoration: none;
+    color: #fff; /* Default text color */
+}
+
+/* Navigation links styles */
+.nav-link {
+    margin-right: 16px; /* Adjust margin as needed */
+    text-decoration: none;
+    color: #fff; /* Default text color */
+}
