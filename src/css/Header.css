@@ -1,27 +1,11 @@
-/* components/Header.css */
-
 /* Header styles */
 .header {
     background-color: #333; /* Default background color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Add box shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo styles */
 .logo-img {
     height: 50px; /* Adjust the height as needed */
-    margin-right: 16px; /* Adjust margin as needed */
-}
-
-/* Title styles */
-.title-link {
-    flex-grow: 1;
-    text-decoration: none;
-    color: #fff; /* Default text color */
-}
-
-/* Navigation links styles */
-.nav-link {
-    margin-right: 16px; /* Adjust margin as needed */
-    text-decoration: none;
-    color: #fff; /* Default text color */
+    margin-right: 20px; /* Adjust margin as needed */
 }

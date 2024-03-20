@@ -1,9 +1,12 @@
 .card-wrapper {
-    width: 200px; /* Adjust width as needed */
-    margin: 10px; /* Adjust margin as needed */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute space between cards */
+    margin: 0; /* Adjust margin as needed */
 }
 
 .card {
+    width: calc(50% - 10px); /* Two cards per row with margin */
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -12,7 +15,6 @@
     border-radius: 8px;
     padding: 10px;
     cursor: pointer;
-    height: 100%; /* Ensure all cards occupy the same height */
     transition: border-color 0.3s, transform 0.3s; /* Add transition for smooth effect */
 }
 
@@ -22,17 +24,17 @@
 }
 
 .card img {
+    padding: 0;
+    max-width: 150px;
+    max-height: 150px;
     width: auto;
     height: auto;
-    max-width: 200px;
-    max-height: 150px; /* Set maximum height for the images */
-    object-fit: cover; /* Ensure the entire image fits */
+    object-fit: contain;
 }
 
 .card p {
-    margin-top: auto; /* Push the text to the bottom of the card */
+    margin: 0;
+    padding: 0;
     font-weight: bold;
     text-align: center;
 }
-
-/* Add additional styles as needed */

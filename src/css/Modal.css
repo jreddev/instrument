@@ -1,7 +1,7 @@
 .modal-container {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 25px;
+    left: 100px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -21,9 +21,11 @@
 
 .modal-content {
     position: relative;
-    background-color: #fff;
+    background-color: #ffffff;
+    color: #414141;
     border-radius: 8px;
     z-index: 1000; /* Ensure modal content is on top of overlay */
+    padding: 20px; /* Adjust padding as needed */
 }
 
 .close {
@@ -35,26 +37,40 @@
 }
 
 .modal-body {
+    flex: 1; /* Ensure modal body takes up remaining space */
     display: flex;
     border-radius: 8px;
-
-}
-
-.instrument-image {
-    flex: 1;
-    padding: 50px;
-    max-width: 200px; /* Set a specific max-width for the image */
-    height: auto;
-    object-fit: contain; /* Maintain aspect ratio of the image */
 }
 
 .instrument-details {
+    width: 400px;
+    position: relative; /* Ensure .instrument-details acts as a reference for absolute positioning */
     flex: 2;
-    background-color: #264A66; /* Darker background color */
-    color: #fff; /* White text color */
-    padding: 30px; /* Add padding for better readability */
+    padding: 25px; /* Add padding for better readability */
     border-radius: 8px;
+}
 
+.modal-circle-image {
+    position: relative;
+    top: -150px; /* Adjust this value as needed */
+    right: 175px; /* Adjust this value as needed */
+    background-color: #dadada;
+    border-radius: 50%;
+    object-fit: contain;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 175px; /* Adjust this value as needed */
+    width: 175px; /* Adjust this value as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+}
+
+.instrument-image {
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    max-height: 100%; /* Ensure the image doesn't exceed its container height */
+    object-fit: contain; /* Maintain aspect ratio of the image */
 }
 
 /* Add additional styles as needed */
