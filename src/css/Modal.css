@@ -10,6 +10,10 @@
     z-index: 999; /* Ensure modal is on top of other content */
 }
 
+h2 {
+    color: #3F79AB;
+}
+
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -67,10 +71,15 @@
     z-index: 1001;
 }
 
+.modal-circle-image:hover {
+    transform: scale(1.025);
+}
+
 .instrument-image {
-    max-width: 100%; /* Ensure the image doesn't exceed its container width */
-    max-height: 100%; /* Ensure the image doesn't exceed its container height */
+    max-width: 175px;
+    max-height: 175px;
     object-fit: contain; /* Maintain aspect ratio of the image */
 }
+
 
 /* Add additional styles as needed */
