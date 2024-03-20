@@ -6,7 +6,7 @@
 }
 
 .card {
-    width: calc(50% - 10px); /* Two cards per row with margin */
+    width: calc(50% - 0px); /* Two cards per row with margin */
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -24,9 +24,9 @@
 }
 
 .card img {
-    padding: 0;
-    max-width: 150px;
-    max-height: 150px;
+    padding: 10px;
+    max-width: 140px;
+    max-height: 140px;
     width: auto;
     height: auto;
     object-fit: contain;

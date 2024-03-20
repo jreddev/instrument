@@ -27,7 +27,7 @@ h2 {
     position: relative;
     background-color: #ffffff;
     color: #414141;
-    border-radius: 8px;
+    border-radius: 25px;
     z-index: 1000; /* Ensure modal content is on top of overlay */
     padding: 20px; /* Adjust padding as needed */
 }
@@ -58,7 +58,7 @@ h2 {
     position: relative;
     top: -150px; /* Adjust this value as needed */
     right: 175px; /* Adjust this value as needed */
-    background-color: #dadada;
+    background-color: #FFC757;
     border-radius: 50%;
     object-fit: contain;
     padding: 20px;
@@ -76,8 +76,8 @@ h2 {
 }
 
 .instrument-image {
-    max-width: 175px;
-    max-height: 175px;
+    max-width: 150px;
+    max-height: 150px;
     object-fit: contain; /* Maintain aspect ratio of the image */
 }
 
