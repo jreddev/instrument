@@ -16,7 +16,7 @@ const Modal = ({ instrument, closeModal }) => {
             <div className="modal-content">
                 <span className="close" onClick={closeModal}>&times;</span>
                 <div className="modal-body">
-                    <img src={`images/${instrument.name.toLowerCase()}.png`} alt={instrument.name} className="instrument-image"/>
+                    <img src={`/instrument/images/${instrument.name.toLowerCase()}.png`} alt={instrument.name} className="instrument-image"/>
                     <div className="instrument-details">
                         <h2>{instrument.name}</h2>
                         <p><strong>Instrument Class</strong>: {instrument.type}</p>

@@ -13,7 +13,7 @@ const Card = ({ instrument }) => {
     return (
         <div className="card-wrapper">
             <div className="card" onClick={toggleModal}>
-                <img src={`images/${instrument.name.toLowerCase()}.png`} alt={instrument.name} />
+                <img src={`/instrument/images/${instrument.name.toLowerCase()}.png`} alt={instrument.name} className="instrument-image"/>
                 <p>{instrument.name}</p>
             </div>
             {isOpen && <Modal instrument={instrument} closeModal={toggleModal} />}

@@ -1,17 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
+import React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from "./components/Header";
 import './css/App.css'
 import Footer from "./components/Footer";
+import Home from "./components/Home";
 
 const theme = createTheme({
     palette: {
         primary: {
             main: '#264A66',
             light: '#3F79AB',
-
         },
         accent: {
             main: '#FFAA00',
@@ -22,35 +20,14 @@ const theme = createTheme({
 });
 
 function App() {
-    const [isContentScrollable, setContentScrollable] = useState(false);
-
-    useEffect(() => {
-        const content = document.querySelector('.content');
-
-        const handleScroll = () => {
-            const isScrollable = content.scrollHeight > window.innerHeight;
-            setContentScrollable(isScrollable);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        handleScroll(); // Check scrollability on initial render
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     return (
         <ThemeProvider theme={theme}>
-            <Router>
-                <div>
-                    <Header/>
-                    <Routes>
-                        <Route path="/" element={<Home/>}/>
-                    </Routes>
-                    <Footer/>
-                </div>
-            </Router>
+            <div>
+                <Header/>
+                <Home/>
+                <Footer/>
+            </div>
         </ThemeProvider>
     );
 }
