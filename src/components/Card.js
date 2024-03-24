@@ -1,13 +1,14 @@
 // Card.js
-import React, { useState } from 'react';
-import Modal from './Modal';
-import '../css/Card.css'; // Import the CSS file
+import React from 'react';
+import '../css/Card.css';
+import {useCurrentInstrumentContext} from "./CurrentInstrumentContext"; // Import the CSS file
+
 
 const Card = ({ instrument }) => {
-    const [isOpen, setIsOpen] = useState(false);
+    const { setCurrentInstrument } = useCurrentInstrumentContext(); // Consume context to set current instrument
 
     const toggleModal = () => {
-        setIsOpen(!isOpen);
+        setCurrentInstrument(instrument)
     };
 
     return (
@@ -16,7 +17,6 @@ const Card = ({ instrument }) => {
                 <img src={`/instrument/images/${instrument.name.toLowerCase()}.png`} alt={instrument.name} className="instrument-image"/>
                 <p>{instrument.name}</p>
             </div>
-            {isOpen && <Modal instrument={instrument} closeModal={toggleModal} />}
         </div>
     );
 };

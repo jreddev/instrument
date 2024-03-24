@@ -8,8 +8,8 @@ import Home from "./components/Home";
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#264A66',
-            light: '#3F79AB',
+            main: '#602020',
+            light: '#882e2e',
         },
         accent: {
             main: '#FFAA00',

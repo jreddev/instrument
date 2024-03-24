@@ -11,16 +11,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 10px;
     cursor: pointer;
-    transition: border-color 0.3s, transform 0.3s; /* Add transition for smooth effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
 .card:hover {
-    border-color: #3F79AB; /* Change border color on hover */
-    transform: scale(1.05); /* Zoom effect on hover */
+    transform: scale(1.075); /* Zoom effect on hover */
 }
 
 .card img {

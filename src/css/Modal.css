@@ -1,17 +1,13 @@
 .modal-container {
     position: fixed;
-    top: 25px;
-    left: 100px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 999; /* Ensure modal is on top of other content */
-}
-
-h2 {
-    color: #3F79AB;
 }
 
 .modal-overlay {
@@ -24,62 +20,119 @@ h2 {
 }
 
 .modal-content {
-    position: relative;
-    background-color: #ffffff;
-    color: #414141;
-    border-radius: 25px;
+    border-radius: 8px;
     z-index: 1000; /* Ensure modal content is on top of overlay */
-    padding: 20px; /* Adjust padding as needed */
+    width: 80%;
+    height: 80%;
+}
+
+.modal-inline {
+    display: flex;
 }
 
 .close {
+    color: #882e2e;
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .modal-body {
-    flex: 1; /* Ensure modal body takes up remaining space */
     display: flex;
-    border-radius: 8px;
 }
 
 .instrument-details {
-    width: 400px;
-    position: relative; /* Ensure .instrument-details acts as a reference for absolute positioning */
+    min-width: 250px;
+    margin-left: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
     flex: 2;
-    padding: 25px; /* Add padding for better readability */
     border-radius: 8px;
 }
 
-.modal-circle-image {
-    position: relative;
-    top: -150px; /* Adjust this value as needed */
-    right: 175px; /* Adjust this value as needed */
-    background-color: #FFC757;
-    border-radius: 50%;
-    object-fit: contain;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 175px; /* Adjust this value as needed */
-    width: 175px; /* Adjust this value as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1001;
+.instrument-details h2 {
+    color: #882e2e;
 }
 
-.modal-circle-image:hover {
-    transform: scale(1.025);
+.modal-circle-image {
+    height: 80%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%); /* Center vertically */
+    left: 0;
+    right: 0;
 }
 
 .instrument-image {
-    max-width: 150px;
-    max-height: 150px;
-    object-fit: contain; /* Maintain aspect ratio of the image */
+    align-items: center;
+    max-height: 90%;
+    max-width: 90%;
+    object-fit: contain;
 }
 
+.instrument-header {
+    color: white;
+    width: 100%;
+    background-color: #882e2e;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
 
-/* Add additional styles as needed */
+.similar-instruments {
+    border-radius: 8px;
+    color: #504f4f;
+    margin-top: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.similar-instruments h3 {
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin: 10px;
+}
+
+.similar-cards {
+    margin-left: 20px;
+    background-color: #ffffff;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.similar-instrument {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 20px;
+    background-color: #ffffff;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.similar-instrument:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    transition: border-color 0.3s, transform 0.3s; /* Add transition for smooth effect */
+}
+
+.similar-instrument-image {
+    max-height: 90px;
+    max-width: 90px;
+}

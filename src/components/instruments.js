@@ -11,7 +11,8 @@ export const instrumentsData = {
             "size": "Medium",
             "hands": 2,
             "groups": ["Rock Band", "Acoustic Ensemble"],
-            "genres": ["Rock", "Pop", "Blues"]
+            "genres": ["Rock", "Pop", "Blues"],
+            'similar_instruments': ["Banjo","Ukulele", "Mandolin"]
         },
         {
             "name": "Clarinet",
@@ -22,7 +23,8 @@ export const instrumentsData = {
             "size": "Medium",
             "hands": 2,
             "groups": ["Concert Band", "Jazz Ensemble"],
-            "genres": ["Classical", "Jazz", "Swing"]
+            "genres": ["Classical", "Jazz", "Swing"],
+            'similar_instruments': ["Bass Clarinet","Oboe", "Bagpipes"]
         },
         {
             "name": "Steel Drum",
@@ -33,7 +35,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 2,
             "groups": ["Steel Band"],
-            "genres": ["Calypso", "Reggae"]
+            "genres": ["Calypso", "Reggae"],
+            'similar_instruments': ["Drum Set","Gong"]
         },
         {
             "name": "Piano",
@@ -44,7 +47,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 2,
             "groups": ["Solo", "Ensemble"],
-            "genres": ["Classical", "Jazz", "Pop"]
+            "genres": ["Classical", "Jazz", "Pop"],
+            'similar_instruments': ["Organ","Electric Keyboard", "Harpsichord"]
         },
         {
             "name": "Oboe",
@@ -55,7 +59,8 @@ export const instrumentsData = {
             "size": "Medium",
             "hands": 2,
             "groups": ["Orchestra", "Wind Ensemble"],
-            "genres": ["Classical", "Film Score"]
+            "genres": ["Classical", "Film Score"],
+            'similar_instruments': ["Clarinet","Bassoon"]
         },
         {
             "name": "Recorder",
@@ -66,7 +71,8 @@ export const instrumentsData = {
             "size": "Small",
             "hands": 2,
             "groups": ["Early Music Ensemble", "School Bands"],
-            "genres": ["Classical", "Folk"]
+            "genres": ["Classical", "Folk"],
+            'similar_instruments': ["Clarinet","Oboe", "Tin Whistle"]
         },
         {
             "name": "Piccolo",
@@ -77,7 +83,8 @@ export const instrumentsData = {
             "size": "Small",
             "hands": 2,
             "groups": ["Concert Band", "Marching Band"],
-            "genres": ["Classical", "Marching Music"]
+            "genres": ["Classical", "Marching Music"],
+            'similar_instruments': ["Oboe","Clarinet"]
         },
         {
             "name": "Ukulele",
@@ -88,7 +95,8 @@ export const instrumentsData = {
             "size": "Small",
             "hands": 1,
             "groups": ["Solo", "Folk Bands"],
-            "genres": ["Folk", "Pop", "Hawaiian"]
+            "genres": ["Folk", "Pop", "Hawaiian"],
+            'similar_instruments': ["Guitar","Banjo", "Mandolin"]
         },
         {
             "name": "Cello",
@@ -99,7 +107,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 2,
             "groups": ["Orchestra", "String Quartet"],
-            "genres": ["Classical", "Folk", "Jazz"]
+            "genres": ["Classical", "Folk", "Jazz"],
+            'similar_instruments': ["Violin","Viola", "Fiddle"]
         },
         {
             "name": "Drum Set",
@@ -110,7 +119,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 4,
             "groups": ["Rock Band", "Jazz Ensemble"],
-            "genres": ["Rock", "Pop", "Metal"]
+            "genres": ["Rock", "Pop", "Metal"],
+            'similar_instruments': ["Steel Drum","Gong"]
         },
         {
             "name": "Banjo",
@@ -121,7 +131,8 @@ export const instrumentsData = {
             "size": "Medium",
             "hands": 1,
             "groups": ["Bluegrass Band", "Folk Ensemble"],
-            "genres": ["Bluegrass", "Folk", "Country"]
+            "genres": ["Bluegrass", "Folk", "Country"],
+            'similar_instruments': ["Guitar","Ukulele", "Mandolin"]
         },
         {
             "name": "Organ",
@@ -132,7 +143,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 2,
             "groups": ["Church Choir", "Rock Band"],
-            "genres": ["Classical", "Gospel", "Rock"]
+            "genres": ["Classical", "Gospel", "Rock"],
+            'similar_instruments': ["Piano","Electric Keyboard", "Accordion"]
         },
         {
             "name": "Bassoon",
@@ -143,7 +155,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 2,
             "groups": ["Orchestra", "Wind Ensemble"],
-            "genres": ["Classical", "Film Score"]
+            "genres": ["Classical", "Film Score"],
+            'similar_instruments': ["Clarinet","Bass Clarinet"]
         },
         {
             "name": "Harmonica",
@@ -154,7 +167,8 @@ export const instrumentsData = {
             "size": "Small",
             "hands": 1,
             "groups": ["Various"],
-            "genres": ["Blues", "Folk", "Rock"]
+            "genres": ["Blues", "Folk", "Rock"],
+            'similar_instruments': ["Ocarina","Tin Whistle"]
         },
         {
             "name": "Bass",
@@ -165,7 +179,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 2,
             "groups": ["Rock Band", "Jazz Ensemble", "Orchestra"],
-            "genres": ["Rock", "Jazz", "Funk"]
+            "genres": ["Rock", "Jazz", "Funk"],
+            'similar_instruments': ["Guitar","Cello"]
         },
         {
             "name": "Viola",
@@ -176,7 +191,8 @@ export const instrumentsData = {
             "size": "Medium",
             "hands": 2,
             "groups": ["Orchestra", "String Quartet"],
-            "genres": ["Classical", "Folk", "Jazz"]
+            "genres": ["Classical", "Folk", "Jazz"],
+            'similar_instruments': ["Violin","Cello", "Fiddle"]
         },
         {
             "name": "Bass Clarinet",
@@ -187,7 +203,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 2,
             "groups": ["Concert Band", "Orchestra"],
-            "genres": ["Classical", "Jazz"]
+            "genres": ["Classical", "Jazz"],
+            'similar_instruments': ["Clarinet","Bassoon", "Saxophone"]
         },
         {
             "name": "Saxophone",
@@ -198,7 +215,8 @@ export const instrumentsData = {
             "size": "Medium",
             "hands": 1,
             "groups": ["Jazz Band", "Marching Band"],
-            "genres": ["Jazz", "Pop", "Rock"]
+            "genres": ["Jazz", "Pop", "Rock"],
+            'similar_instruments': ["Bass Clarinet","Oboe"]
         },
         {
             "name": "Tin Whistle",
@@ -209,7 +227,8 @@ export const instrumentsData = {
             "size": "Small",
             "hands": 1,
             "groups": ["Folk Bands", "Traditional Irish Bands"],
-            "genres": ["Folk", "Traditional"]
+            "genres": ["Folk", "Traditional"],
+            'similar_instruments': ["Harmonica","Recorder"]
         },
         {
             "name": "Trumpet",
@@ -220,7 +239,8 @@ export const instrumentsData = {
             "size": "Medium",
             "hands": 1,
             "groups": ["Marching Band", "Jazz Band", "Orchestra"],
-            "genres": ["Jazz", "Funk", "Classical"]
+            "genres": ["Jazz", "Funk", "Classical"],
+            'similar_instruments': ["Cornet","Bugle"]
         },
         {
             "name": "Trombone",
@@ -231,7 +251,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 1,
             "groups": ["Concert Band", "Jazz Band", "Orchestra"],
-            "genres": ["Jazz", "Blues", "Classical"]
+            "genres": ["Jazz", "Blues", "Classical"],
+            'similar_instruments': ["Trumpet","Sousaphone"]
         },
         {
             "name": "Violin",
@@ -242,7 +263,8 @@ export const instrumentsData = {
             "size": "Small",
             "hands": 2,
             "groups": ["Orchestra", "String Quartet"],
-            "genres": ["Classical", "Folk", "Jazz"]
+            "genres": ["Classical", "Folk", "Jazz"],
+            'similar_instruments': ["Viola","Fiddle"]
         },
         {
             "name": "Mandolin",
@@ -253,7 +275,8 @@ export const instrumentsData = {
             "size": "Small",
             "hands": 1,
             "groups": ["Folk Bands", "Bluegrass Bands"],
-            "genres": ["Folk", "Bluegrass", "Country"]
+            "genres": ["Folk", "Bluegrass", "Country"],
+            'similar_instruments': ["Guitar","Ukulele"]
         },
         {
             "name": "Marimba",
@@ -264,7 +287,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 2,
             "groups": ["Percussion Ensemble", "Orchestra"],
-            "genres": ["Classical", "Contemporary"]
+            "genres": ["Classical", "Contemporary"],
+            'similar_instruments': ["Xylophone","Vibraphone"]
         },
         {
             "name": "French Horn",
@@ -275,7 +299,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 2,
             "groups": ["Orchestra", "Wind Ensemble"],
-            "genres": ["Classical", "Film Score"]
+            "genres": ["Classical", "Film Score"],
+            'similar_instruments': ["Sousaphone","Euphonium"]
         },
         {
             "name": "Accordion",
@@ -286,7 +311,8 @@ export const instrumentsData = {
             "size": "Medium",
             "hands": 2,
             "groups": ["Folk Bands", "Polka Bands", "Tango Groups"],
-            "genres": ["Folk", "Polka", "Tango"]
+            "genres": ["Folk", "Polka", "Tango"],
+            'similar_instruments': ["Electric Keyboard","Organ"]
         },
         {
             "name": "Bagpipes",
@@ -297,7 +323,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 2,
             "groups": ["Scottish Highland Bands", "Military Bands"],
-            "genres": ["Scottish Traditional", "Military"]
+            "genres": ["Scottish Traditional", "Military"],
+            'similar_instruments': ["Clarinet","Recorder"]
         },
         {
             "name": "Tuba",
@@ -308,7 +335,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 1,
             "groups": ["Brass Band", "Orchestra", "Concert Band"],
-            "genres": ["Classical", "Marching Band", "Jazz"]
+            "genres": ["Classical", "Marching Band", "Jazz"],
+            'similar_instruments': ["Euphonium","Sousaphone"]
         },
         {
             "name": "Harp",
@@ -319,7 +347,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 2,
             "groups": ["Orchestra", "Ensembles", "Solo"],
-            "genres": ["Classical", "Folk", "Pop"]
+            "genres": ["Classical", "Folk", "Pop"],
+            'similar_instruments': ["Piano","Bass"]
         },
         {
             "name": "Erhu",
@@ -330,7 +359,8 @@ export const instrumentsData = {
             "size": "Small",
             "hands": 1,
             "groups": ["Chinese Orchestra", "Folk Ensembles"],
-            "genres": ["Chinese Traditional", "Folk"]
+            "genres": ["Chinese Traditional", "Folk"],
+            'similar_instruments': ["Violin","Fiddle"]
         },
         {
             "name": "Didgeridoo",
@@ -341,7 +371,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 1,
             "groups": ["Aboriginal Bands", "Folk Ensembles"],
-            "genres": ["Aboriginal Traditional", "Folk"]
+            "genres": ["Aboriginal Traditional", "Folk"],
+            'similar_instruments': ["Recorder","Ocarina"]
         },
         {
             "name": "Ocarina",
@@ -352,7 +383,8 @@ export const instrumentsData = {
             "size": "Small",
             "hands": 1,
             "groups": ["Various"],
-            "genres": ["Folk", "Video Game Music"]
+            "genres": ["Folk", "Video Game Music"],
+            'similar_instruments': ["Tin Whistle","Recorder"]
         },
         {
             "name": "Euphonium",
@@ -363,7 +395,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 1,
             "groups": ["Brass Band", "Concert Band", "Orchestra"],
-            "genres": ["Classical", "Marching Band"]
+            "genres": ["Classical", "Marching Band"],
+            'similar_instruments': ["Tuba","Sousaphone"]
         },
         {
             "name": "Electric Keyboard",
@@ -374,7 +407,8 @@ export const instrumentsData = {
             "size": "Medium",
             "hands": 1,
             "groups": ["Various"],
-            "genres": ["Pop", "Rock", "Electronic"]
+            "genres": ["Pop", "Rock", "Electronic"],
+            'similar_instruments': ["Piano","Organ"]
         },
         {
             "name": "Synthesizer",
@@ -385,7 +419,8 @@ export const instrumentsData = {
             "size": "Various",
             "hands": 1,
             "groups": ["Electronic Bands", "Experimental Music Groups"],
-            "genres": ["Electronic", "Ambient", "Experimental"]
+            "genres": ["Electronic", "Ambient", "Experimental"],
+            'similar_instruments': ["Electric Keyboard","Organ"]
         },
         {
             "name": "Harpsichord",
@@ -396,7 +431,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 2,
             "groups": ["Baroque Ensemble", "Early Music Ensembles"],
-            "genres": ["Baroque", "Classical"]
+            "genres": ["Baroque", "Classical"],
+            'similar_instruments': ["Piano","Electric Keyboard"]
         },
         {
             "name": "Flugelhorn",
@@ -407,7 +443,8 @@ export const instrumentsData = {
             "size": "Medium",
             "hands": 1,
             "groups": ["Jazz Band", "Brass Ensemble"],
-            "genres": ["Jazz", "Classical"]
+            "genres": ["Jazz", "Classical"],
+            'similar_instruments': ["Cornet","Trumpet"]
         },
         {
             "name": "Bugle",
@@ -418,7 +455,8 @@ export const instrumentsData = {
             "size": "Medium",
             "hands": 1,
             "groups": ["Military Band", "Scout Bands"],
-            "genres": ["Military", "Marching Band"]
+            "genres": ["Military", "Marching Band"],
+            'similar_instruments': ["Trumpet","Cornet"]
         },
         {
             "name": "Cornet",
@@ -429,7 +467,8 @@ export const instrumentsData = {
             "size": "Medium",
             "hands": 1,
             "groups": ["Concert Band", "Brass Band"],
-            "genres": ["Classical", "Marching Band", "Jazz"]
+            "genres": ["Classical", "Marching Band", "Jazz"],
+            'similar_instruments': ["Trumpet","Flugelhorn"]
         },
         {
             "name": "Mellophone",
@@ -440,7 +479,8 @@ export const instrumentsData = {
             "size": "Medium",
             "hands": 1,
             "groups": ["Marching Band", "Drum and Bugle Corps"],
-            "genres": ["Marching Band", "Drum Corps"]
+            "genres": ["Marching Band", "Drum Corps"],
+            'similar_instruments': ["French Horn","Flugelhorn"]
         },
         {
             "name": "Sousaphone",
@@ -451,7 +491,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 1,
             "groups": ["Marching Band", "Brass Band"],
-            "genres": ["Marching Band", "Brass Band"]
+            "genres": ["Marching Band", "Brass Band"],
+            'similar_instruments': ["Tuba","Euphonium"]
         },
         {
             "name": "Fiddle",
@@ -462,7 +503,8 @@ export const instrumentsData = {
             "size": "Medium",
             "hands": 1,
             "groups": ["Folk Band", "Bluegrass Band"],
-            "genres": ["Folk", "Bluegrass", "Country"]
+            "genres": ["Folk", "Bluegrass", "Country"],
+            'similar_instruments': ["Violin","Erhu"]
         },
         {
             "name": "Maracas",
@@ -473,7 +515,8 @@ export const instrumentsData = {
             "size": "Small",
             "hands": 2,
             "groups": ["Latin Band", "Salsa Band"],
-            "genres": ["Latin", "Salsa"]
+            "genres": ["Latin", "Salsa"],
+            'similar_instruments': ["Bells","Tambourine"]
         },
         {
             "name": "Cymbals",
@@ -484,7 +527,8 @@ export const instrumentsData = {
             "size": "Medium",
             "hands": 2,
             "groups": ["Orchestra", "Percussion Ensemble"],
-            "genres": ["Classical", "Contemporary"]
+            "genres": ["Classical", "Contemporary"],
+            'similar_instruments': ["Tambourine","Gong"]
         },
         {
             "name": "Gong",
@@ -495,7 +539,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 1,
             "groups": ["Orchestra", "Percussion Ensemble"],
-            "genres": ["Classical", "Asian", "Experimental"]
+            "genres": ["Classical"],
+            'similar_instruments': ["Cymbals","Drum Set"]
         },
         {
             "name": "Bells",
@@ -506,7 +551,8 @@ export const instrumentsData = {
             "size": "Various",
             "hands": 2,
             "groups": ["Orchestra", "Handbell Choir"],
-            "genres": ["Classical", "Holiday"]
+            "genres": ["Classical", "Holiday"],
+            'similar_instruments': ["Gong","Triangle"]
         },
         {
             "name": "Tambourine",
@@ -517,7 +563,8 @@ export const instrumentsData = {
             "size": "Small",
             "hands": 1,
             "groups": ["Folk Band", "Rock Band"],
-            "genres": ["Folk", "Rock"]
+            "genres": ["Folk", "Rock"],
+            'similar_instruments': ["Maracas","Triangle"]
         },
         {
             "name": "Triangle",
@@ -528,7 +575,8 @@ export const instrumentsData = {
             "size": "Small",
             "hands": 1,
             "groups": ["Orchestra", "Percussion Ensemble"],
-            "genres": ["Classical", "Folk"]
+            "genres": ["Classical", "Folk"],
+            'similar_instruments': ["Bells","Tambourine"]
         },
         {
             "name": "Vibraphone",
@@ -539,7 +587,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 2,
             "groups": ["Jazz Band", "Percussion Ensemble"],
-            "genres": ["Jazz", "Contemporary"]
+            "genres": ["Jazz", "Contemporary"],
+            'similar_instruments': ["Xylophone","Marimba"]
         },
         {
             "name": "Xylophone",
@@ -550,7 +599,8 @@ export const instrumentsData = {
             "size": "Large",
             "hands": 2,
             "groups": ["Concert Band", "Percussion Ensemble"],
-            "genres": ["Classical", "Contemporary"]
+            "genres": ["Classical", "Contemporary"],
+            'similar_instruments': ["Vibraphone","Marimba"]
         },
     ]
 };
