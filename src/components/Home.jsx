@@ -21,7 +21,8 @@ const Home = () => {
     const [groupFiltersVisible, setGroupFiltersVisible] = useState(true);
     const [priceFiltersVisible, setPriceFiltersVisible] = useState(true); // State to track visibility of price filters
     const [isHovered, setIsHovered] = useState(false);
-    const { setCurrentInstrument, currentInstrument } = useCurrentInstrumentContext();
+    const {setCurrentInstrument, currentInstrument } = useCurrentInstrumentContext();
+    const [sortBy, setSortBy] = useState("name");
 
     const handleHover = (value) => {
         setIsHovered(value);
@@ -98,6 +99,21 @@ const Home = () => {
         const max = maxPrice !== '' ? parseFloat(maxPrice) : Infinity;
         return price >= min && price <= max;
     });
+
+    const sortInstruments = (instruments, sortBy) => {
+        switch (sortBy) {
+            case 'name':
+                return instruments.sort((a, b) => a.name.localeCompare(b.name));
+            case 'priceLowToHigh':
+                return instruments.sort((a, b) => a.avg_price - b.avg_price);
+            case 'priceHighToLow':
+                return instruments.sort((a, b) => b.avg_price - a.avg_price);
+            case 'size':
+                return instruments.sort((a, b) => a.weight - b.weight);
+            default:
+                return instruments;
+        }
+    }
 
     const sortedInstruments = filteredInstruments.sort((a, b) => a.name.localeCompare(b.name));
 

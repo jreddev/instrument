@@ -45,7 +45,7 @@
 }
 
 .instrument-details {
-    min-width: 250px;
+    min-width: 300px;
     margin-left: 20px;
     padding-left: 30px;
     padding-right: 30px;
@@ -53,14 +53,17 @@
     background-color: #ffffff;
     flex: 2;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+
 }
 
 .instrument-details h2 {
     color: #882e2e;
+    text-align: center;
 }
 
 .modal-circle-image {
-    height: 80%;
+    height: 75%;
     display: flex;
     justify-content: center; /* Center horizontally */
     position: absolute;
@@ -78,9 +81,11 @@
 }
 
 .instrument-header {
-    color: white;
+    color: #000000;
+    font-size: 18px;
     width: 100%;
-    background-color: rgba(136, 46, 46, 0.95);
+    background-color: #ffffff;
+    /*background-color: rgba(136, 46, 46, 0.95);*/
     display: flex;
     position: relative;
     flex-direction: column;
@@ -90,15 +95,16 @@
 
 .similar-instruments {
     border-radius: 8px;
-    color: #504f4f;
+    color: #882e2e;
     margin-top: 20px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    opacity: .9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+
 }
 
-.similar-instruments h3 {
+.similar-instruments h2 {
     justify-content: center;
     text-align: center;
     padding: 0;
@@ -106,13 +112,10 @@
 }
 
 .similar-cards {
-    margin-left: 20px;
-    background-color: #ffffff;
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    opacity: 1;
 }
 
 .similar-instrument {
@@ -121,15 +124,14 @@
     flex-direction: column;
     justify-content: center;
     color: white;
-    padding: 10px;
+    padding: 4px;
     border-radius: 8px;
-    margin: 20px;
+    margin: 12px 20px;
     background-color: #ffffff;
     width: 120px;
     height: 120px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
     transition: transform 0.5s, box-shadow 0.9s;
-    opacity: 1;
 }
 
 .similar-instrument:hover {
@@ -145,4 +147,38 @@
 
 .similar-instrument-wrapper {
     opacity: 1;
+
+}
+
+.modal-plus {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    opacity: .95;
+}
+
+.coverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Dark grey overlay with opacity 0.7 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 8px;
+    pointer-events: none; /* Prevents overlay from capturing clicks */
+}
+
+.similar-instrument:hover .coverlay {
+    opacity: 1;
+}
+
+.instrument-name {
+    color: #575757;
+    font-size: 18px;
+    text-align: center;
 }

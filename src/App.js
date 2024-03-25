@@ -23,7 +23,7 @@ function App() {
 
     return (
         <ThemeProvider theme={theme}>
-            <div>
+            <div className="app-wrapper">
                 <Header/>
                 <Home/>
                 <Footer/>

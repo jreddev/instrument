@@ -1,6 +1,11 @@
 /* Global CSS file (e.g., App.css) */
 
+
 .scrollable-container {
     overflow-y: hidden; /* Hide vertical scrollbar */
     overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.app-wrapper {
+    font-family: 'Abolition', sans-serif;
 }

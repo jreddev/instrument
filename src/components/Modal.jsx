@@ -48,13 +48,18 @@ const Modal = ({ instrument, closeModal }) => {
                         </div>
                     </div>
                     <div className="similar-instruments">
-                        <h3>Similar Instruments</h3>
+                        <h2>Similar Instruments</h2>
                         <div className="similar-cards">
                             {instrument.similar_instruments.map((similarInstrument, index) => (
-                                <div className="similar-instrument-wrapper">
-                                    <div className="similar-instrument" key={index} onClick={() => handleSimilarInstrumentClick(similarInstrument)}>
+                                <div className="similar-instrument-wrapper" key={index}>
+                                    <div className="similar-instrument"
+                                         onClick={() => handleSimilarInstrumentClick(similarInstrument)}
+                                         key={similarInstrument}>
                                         <img src={`/instrument/images/${similarInstrument.toLowerCase()}.png`}
                                              alt={similarInstrument} className="similar-instrument-image"/>
+                                        <div className="coverlay">
+                                            <span className="instrument-name">{similarInstrument}</span>
+                                        </div>
                                     </div>
                                 </div>
                             ))}
