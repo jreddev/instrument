@@ -80,7 +80,7 @@
 .instrument-header {
     color: white;
     width: 100%;
-    background-color: #882e2e;
+    background-color: rgba(136, 46, 46, 0.95);
     display: flex;
     position: relative;
     flex-direction: column;
@@ -95,6 +95,7 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    opacity: .9;
 }
 
 .similar-instruments h3 {
@@ -111,6 +112,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    opacity: 1;
 }
 
 .similar-instrument {
@@ -126,15 +128,21 @@
     width: 120px;
     height: 120px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
-    transition: transition 0.5s;
+    transition: transform 0.5s, box-shadow 0.9s;
+    opacity: 1;
 }
 
 .similar-instrument:hover {
-    box-shadow: 0 0 5px #882e2e; /* Add box shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: border-color 0.3s, transform 0.5s; /* Add transition for smooth effect */
+    transform: scale(1.05);
 }
 
 .similar-instrument-image {
     max-height: 90px;
     max-width: 90px;
+}
+
+.similar-instrument-wrapper {
+    opacity: 1;
 }
