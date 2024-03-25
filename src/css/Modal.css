@@ -126,11 +126,12 @@
     width: 120px;
     height: 120px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    transition: transition 0.5s;
 }
 
 .similar-instrument:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
-    transition: border-color 0.3s, transform 0.3s; /* Add transition for smooth effect */
+    box-shadow: 0 0 5px #882e2e; /* Add box shadow */
+    transition: border-color 0.3s, transform 0.5s; /* Add transition for smooth effect */
 }
 
 .similar-instrument-image {

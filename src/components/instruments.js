@@ -10,7 +10,7 @@ export const instrumentsData = {
             "weight": "1 - 5 kg",
             "size": "Medium",
             "hands": 2,
-            "groups": ["Rock Band", "Acoustic Ensemble"],
+            "groups": ["Rock Band", "Solo"],
             "genres": ["Rock", "Pop", "Blues"],
             'similar_instruments': ["Banjo","Ukulele", "Mandolin"]
         },
@@ -20,9 +20,9 @@ export const instrumentsData = {
             "price_range": "$200 - $3000",
             "avg_rent_cost": "$30 - $70/month",
             "weight": "1 - 2 kg",
-            "size": "Medium",
+            "size": "Small",
             "hands": 2,
-            "groups": ["Concert Band", "Jazz Ensemble"],
+            "groups": ["Concert Band", "Marching Band"],
             "genres": ["Classical", "Jazz", "Swing"],
             'similar_instruments': ["Bass Clarinet","Oboe", "Bagpipes"]
         },
@@ -34,7 +34,7 @@ export const instrumentsData = {
             "weight": "5 - 10 kg",
             "size": "Large",
             "hands": 2,
-            "groups": ["Steel Band"],
+            "groups": ["Concert Band"],
             "genres": ["Calypso", "Reggae"],
             'similar_instruments': ["Drum Set","Gong"]
         },
@@ -56,9 +56,9 @@ export const instrumentsData = {
             "price_range": "$500 - $8000",
             "avg_rent_cost": "$40 - $100/month",
             "weight": "1 - 2 kg",
-            "size": "Medium",
+            "size": "Small",
             "hands": 2,
-            "groups": ["Orchestra", "Wind Ensemble"],
+            "groups": ["Orchestra", "Concert Band"],
             "genres": ["Classical", "Film Score"],
             'similar_instruments': ["Clarinet","Bassoon"]
         },
@@ -70,7 +70,7 @@ export const instrumentsData = {
             "weight": "0.1 - 0.3 kg",
             "size": "Small",
             "hands": 2,
-            "groups": ["Early Music Ensemble", "School Bands"],
+            "groups": ["Solo"],
             "genres": ["Classical", "Folk"],
             'similar_instruments': ["Clarinet","Oboe", "Tin Whistle"]
         },
@@ -117,7 +117,7 @@ export const instrumentsData = {
             "avg_rent_cost": "$50 - $100/month",
             "weight": "20 - 30 kg",
             "size": "Large",
-            "hands": 4,
+            "hands": 2,
             "groups": ["Rock Band", "Jazz Ensemble"],
             "genres": ["Rock", "Pop", "Metal"],
             'similar_instruments': ["Steel Drum","Gong"]
@@ -129,8 +129,8 @@ export const instrumentsData = {
             "avg_rent_cost": "$30 - $60/month",
             "weight": "2 - 5 kg",
             "size": "Medium",
-            "hands": 1,
-            "groups": ["Bluegrass Band", "Folk Ensemble"],
+            "hands": 2,
+            "groups": ["Bluegrass Band", "Folk Ensemble", "Solo"],
             "genres": ["Bluegrass", "Folk", "Country"],
             'similar_instruments': ["Guitar","Ukulele", "Mandolin"]
         },
@@ -142,7 +142,7 @@ export const instrumentsData = {
             "weight": "50 - 200 kg",
             "size": "Large",
             "hands": 2,
-            "groups": ["Church Choir", "Rock Band"],
+            "groups": ["Church Choir", "Accompany"],
             "genres": ["Classical", "Gospel", "Rock"],
             'similar_instruments': ["Piano","Electric Keyboard", "Accordion"]
         },
@@ -154,9 +154,9 @@ export const instrumentsData = {
             "weight": "2 - 3 kg",
             "size": "Large",
             "hands": 2,
-            "groups": ["Orchestra", "Wind Ensemble"],
+            "groups": ["Orchestra", "Wind Ensemble", "Concert Band"],
             "genres": ["Classical", "Film Score"],
-            'similar_instruments': ["Clarinet","Bass Clarinet"]
+            'similar_instruments': ["Clarinet","Bass Clarinet", "Oboe"]
         },
         {
             "name": "Harmonica",
@@ -166,9 +166,21 @@ export const instrumentsData = {
             "weight": "0.1 - 0.2 kg",
             "size": "Small",
             "hands": 1,
-            "groups": ["Various"],
+            "groups": ["Various", "Solo", "Jazz Ensemble"],
             "genres": ["Blues", "Folk", "Rock"],
             'similar_instruments': ["Ocarina","Tin Whistle"]
+        },
+        {
+            "name": "Electric Bass",
+            "type": "String",
+            "price_range": "$300 - $5000",
+            "avg_rent_cost": "$30 - $100/month",
+            "weight": "3 - 6 kg",
+            "size": "Large",
+            "hands": 2,
+            "groups": ["Rock Band", "Jazz Ensemble"],
+            "genres": ["Rock", "Jazz", "Funk"],
+            'similar_instruments': ["Guitar","Cello", "Bass"]
         },
         {
             "name": "Bass",
@@ -178,9 +190,9 @@ export const instrumentsData = {
             "weight": "3 - 6 kg",
             "size": "Large",
             "hands": 2,
-            "groups": ["Rock Band", "Jazz Ensemble", "Orchestra"],
-            "genres": ["Rock", "Jazz", "Funk"],
-            'similar_instruments': ["Guitar","Cello"]
+            "groups": ["Jazz Ensemble", "Orchestra"],
+            "genres": ["Jazz", "Funk", "Blues"],
+            'similar_instruments': ["Guitar","Cello", "Electric Bass"]
         },
         {
             "name": "Viola",
@@ -204,7 +216,7 @@ export const instrumentsData = {
             "hands": 2,
             "groups": ["Concert Band", "Orchestra"],
             "genres": ["Classical", "Jazz"],
-            'similar_instruments': ["Clarinet","Bassoon", "Saxophone"]
+            'similar_instruments': ["Clarinet","Bassoon","Saxophone"]
         },
         {
             "name": "Saxophone",
@@ -214,9 +226,9 @@ export const instrumentsData = {
             "weight": "1 - 3 kg",
             "size": "Medium",
             "hands": 1,
-            "groups": ["Jazz Band", "Marching Band"],
+            "groups": ["Jazz Band", "Marching Band", "Concert Band"],
             "genres": ["Jazz", "Pop", "Rock"],
-            'similar_instruments': ["Bass Clarinet","Oboe"]
+            'similar_instruments': ["Bass Clarinet","Oboe", "Clarinet"]
         },
         {
             "name": "Tin Whistle",
@@ -236,11 +248,11 @@ export const instrumentsData = {
             "price_range": "$200 - $2000",
             "avg_rent_cost": "$30 - $60/month",
             "weight": "1 - 2 kg",
-            "size": "Medium",
+            "size": "Small",
             "hands": 1,
-            "groups": ["Marching Band", "Jazz Band", "Orchestra"],
+            "groups": ["Marching Band", "Jazz Band", "Orchestra", "Concert Band"],
             "genres": ["Jazz", "Funk", "Classical"],
-            'similar_instruments': ["Cornet","Bugle"]
+            'similar_instruments': ["Cornet","Bugle", "Euphonium", "French Horn", "Flugelhorn"]
         },
         {
             "name": "Trombone",
@@ -250,7 +262,7 @@ export const instrumentsData = {
             "weight": "2 - 3 kg",
             "size": "Large",
             "hands": 1,
-            "groups": ["Concert Band", "Jazz Band", "Orchestra"],
+            "groups": ["Concert Band", "Jazz Band", "Orchestra", "Marching Band"],
             "genres": ["Jazz", "Blues", "Classical"],
             'similar_instruments': ["Trumpet","Sousaphone"]
         },
@@ -276,7 +288,7 @@ export const instrumentsData = {
             "hands": 1,
             "groups": ["Folk Bands", "Bluegrass Bands"],
             "genres": ["Folk", "Bluegrass", "Country"],
-            'similar_instruments': ["Guitar","Ukulele"]
+            'similar_instruments': ["Guitar","Ukulele", "Banjo"]
         },
         {
             "name": "Marimba",
@@ -286,7 +298,7 @@ export const instrumentsData = {
             "weight": "20 - 40 kg",
             "size": "Large",
             "hands": 2,
-            "groups": ["Percussion Ensemble", "Orchestra"],
+            "groups": ["Percussion Ensemble", "Orchestra", "Concert Band"],
             "genres": ["Classical", "Contemporary"],
             'similar_instruments': ["Xylophone","Vibraphone"]
         },
@@ -298,9 +310,9 @@ export const instrumentsData = {
             "weight": "3 - 4 kg",
             "size": "Large",
             "hands": 2,
-            "groups": ["Orchestra", "Wind Ensemble"],
+            "groups": ["Orchestra", "Wind Ensemble", "Concert Band"],
             "genres": ["Classical", "Film Score"],
-            'similar_instruments': ["Sousaphone","Euphonium"]
+            'similar_instruments': ["Mellophone", "Sousaphone","Euphonium","Trumpet"]
         },
         {
             "name": "Accordion",
@@ -310,7 +322,7 @@ export const instrumentsData = {
             "weight": "5 - 15 kg",
             "size": "Medium",
             "hands": 2,
-            "groups": ["Folk Bands", "Polka Bands", "Tango Groups"],
+            "groups": ["Folk Bands", "Polka Bands", "Solo"],
             "genres": ["Folk", "Polka", "Tango"],
             'similar_instruments': ["Electric Keyboard","Organ"]
         },
@@ -370,7 +382,7 @@ export const instrumentsData = {
             "weight": "1 - 3 kg",
             "size": "Large",
             "hands": 1,
-            "groups": ["Aboriginal Bands", "Folk Ensembles"],
+            "groups": ["Aboriginal Bands", "Folk Ensembles", "Solo"],
             "genres": ["Aboriginal Traditional", "Folk"],
             'similar_instruments': ["Recorder","Ocarina"]
         },
@@ -406,7 +418,7 @@ export const instrumentsData = {
             "weight": "5 - 20 kg",
             "size": "Medium",
             "hands": 1,
-            "groups": ["Various"],
+            "groups": ["Various", "Jazz Ensemble"],
             "genres": ["Pop", "Rock", "Electronic"],
             'similar_instruments': ["Piano","Organ"]
         },
@@ -444,7 +456,7 @@ export const instrumentsData = {
             "hands": 1,
             "groups": ["Jazz Band", "Brass Ensemble"],
             "genres": ["Jazz", "Classical"],
-            'similar_instruments': ["Cornet","Trumpet"]
+            'similar_instruments': ["Cornet","Trumpet", "French Horn"]
         },
         {
             "name": "Bugle",
@@ -452,7 +464,7 @@ export const instrumentsData = {
             "price_range": "$100 - $500",
             "avg_rent_cost": "$20 - $50/month",
             "weight": "1 - 2 kg",
-            "size": "Medium",
+            "size": "Small",
             "hands": 1,
             "groups": ["Military Band", "Scout Bands"],
             "genres": ["Military", "Marching Band"],
@@ -500,7 +512,7 @@ export const instrumentsData = {
             "price_range": "$200 - $5000",
             "avg_rent_cost": "$30 - $100/month",
             "weight": "1 - 2 kg",
-            "size": "Medium",
+            "size": "Small",
             "hands": 1,
             "groups": ["Folk Band", "Bluegrass Band"],
             "genres": ["Folk", "Bluegrass", "Country"],
@@ -514,7 +526,7 @@ export const instrumentsData = {
             "weight": "0.1 - 0.5 kg",
             "size": "Small",
             "hands": 2,
-            "groups": ["Latin Band", "Salsa Band"],
+            "groups": ["Latin Band", "Salsa Band", "Concert Band"],
             "genres": ["Latin", "Salsa"],
             'similar_instruments': ["Bells","Tambourine"]
         },
@@ -526,7 +538,7 @@ export const instrumentsData = {
             "weight": "0.5 - 2 kg",
             "size": "Medium",
             "hands": 2,
-            "groups": ["Orchestra", "Percussion Ensemble"],
+            "groups": ["Orchestra", "Percussion Ensemble", "Marching Band", "Concert Band"],
             "genres": ["Classical", "Contemporary"],
             'similar_instruments': ["Tambourine","Gong"]
         },
@@ -538,7 +550,7 @@ export const instrumentsData = {
             "weight": "5 - 20 kg",
             "size": "Large",
             "hands": 1,
-            "groups": ["Orchestra", "Percussion Ensemble"],
+            "groups": ["Orchestra", "Percussion Ensemble", "Concert Band"],
             "genres": ["Classical"],
             'similar_instruments': ["Cymbals","Drum Set"]
         },
@@ -550,7 +562,7 @@ export const instrumentsData = {
             "weight": "1 - 5 kg",
             "size": "Various",
             "hands": 2,
-            "groups": ["Orchestra", "Handbell Choir"],
+            "groups": ["Orchestra", "Handbell Choir", "Concert Band"],
             "genres": ["Classical", "Holiday"],
             'similar_instruments': ["Gong","Triangle"]
         },
@@ -574,7 +586,7 @@ export const instrumentsData = {
             "weight": "0.1 - 0.5 kg",
             "size": "Small",
             "hands": 1,
-            "groups": ["Orchestra", "Percussion Ensemble"],
+            "groups": ["Orchestra", "Percussion Ensemble", "Concert Band"],
             "genres": ["Classical", "Folk"],
             'similar_instruments': ["Bells","Tambourine"]
         },
