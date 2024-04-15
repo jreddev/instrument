@@ -1,83 +1,86 @@
 .home {
-    display: flex;
-    margin: 0 auto;
-    background-color: rgba(231, 231, 231, 0.29);
-    min-height: 84vh;
+  display: flex;
+  margin: 0 auto;
+  background-color: rgba(231, 231, 231, 0.29);
+  min-height: 84vh;
 }
 
 .card-container {
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust minmax values for card width */
-    gap: 30px;
-    max-width: 90%;
-    justify-content: center; /* Center the grid horizontally */
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(180px, 1fr)
+  ); /* Adjust minmax values for card width */
+  gap: 30px;
+  max-width: 90%;
+  justify-content: center; /* Center the grid horizontally */
 }
 
 .card {
-    width: 200px; /* Set a fixed width for the cards */
-    max-width: 90%;
+  width: 200px; /* Set a fixed width for the cards */
+  max-width: 90%;
 }
 
 .content {
-    flex: 1;
-    margin-left: 20px; /* Adjust margin to accommodate the drawer */
+  flex: 1;
+  margin-left: 20px; /* Adjust margin to accommodate the drawer */
 }
 
 .filter-container {
-    min-height: 0;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    padding: 8px 30px;
-    display: flex;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
-    flex-direction: column; /* Display the filters in a single column */
+  min-height: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #f8cccc76;
+  padding: 8px 30px;
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  flex-direction: column; /* Display the filters in a single column */
 }
 
 .filter-container h4 {
-    color: #5d5d5d;
+  color: #5d5d5d;
 }
 
 .filter {
-    padding: 10px;
-    width: auto;
+  padding: 10px;
+  width: auto;
 }
 
 .clear-filter-btn {
-    margin-top: 10px;
-    background-color: #fcfcfc;
-    padding: 5px;
-    border-color: #f0f0f0;
-    border-radius: 8px;
+  margin-top: 10px;
+  background-color: #fcfcfc;
+  padding: 5px;
+  border-color: #f0f0f0;
+  border-radius: 8px;
 }
 
 .clear-filter-btn:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .dropdown-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .arrow-icon {
-    margin-left: 10px; /* Adjust the margin as needed */
-    transition: transform 1s ease;
+  margin-left: 10px; /* Adjust the margin as needed */
+  transition: transform 1s ease;
 }
 
 .filter {
-    padding: 0;
+  padding: 0;
 }
 .filter-group {
-    padding: 0;
+  padding: 0;
 }
 .price-input {
-    padding-bottom: 12px;
-    width: 150px;
+  padding-bottom: 12px;
+  width: 150px;
 }
